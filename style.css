@@ -21,6 +21,7 @@ nav{
     align-items: center;
     top: 0;
     left: 0;
+    position: fixed;
 }
 .quote{
     font-size: xx-large;
@@ -70,6 +71,7 @@ nav{
 .content{
     /* text-align: center; */
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -124,6 +126,7 @@ nav{
     width: 80%;
 }
 
+
 .quoteText {
     font-style: italic;
     font-size: 18px;
@@ -137,7 +140,67 @@ footer img {
     margin: 0 10px;
     vertical-align: middle;
 }
+.content2{
+    min-height: 100vh;
 
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    text-align: center;
+    border: 1px solid black; */
+    margin-top: 20px;
+    width: 80%;
+    font-size: 25px;
+    height: 400px;
+    margin-left : 10%;
+    grid-template-rows: auto;
+    margin-bottom: 20px;
+
+}
+
+.contactName input, .contactEmail input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    width: 100%;
+}
+.contactMessage textarea{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    width: 100%;
+    resize: vertical;
+}
+.formcontact{
+    width: 80%;
+    display: grid;
+    align-items: stretch;
+    flex-direction: column;
+    unicode-bidi: isolate;
+    /* border: 2px solid black; */
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #003366;
+}
+/* form {
+    display: flex;
+    flex-direction: column;
+} */
 .content1{
     display: flex;
     margin: auto;
@@ -150,7 +213,7 @@ footer img {
 .pageLinks{
     justify-content: space-between;
     gap: 10px;
-    width: 400px;
+    width: 500px;
 }
 .pageLinks a {
     color: white;
@@ -164,7 +227,20 @@ footer{
     background-color: #001f3f; 
     width: 100%;
     color: white;
+    bottom: 0;
     margin-top: auto;
     text-align: center;
     padding: 15px 0;
+    position: fixed;
 }
+
+/* Add padding to body to prevent content from being hidden under fixed header/footer */
+body {
+    padding-top: 80px;  /* Adjust based on header height */
+    padding-bottom: 60px; /* Adjust based on footer height */
+}
+/* @media (min-height:40px){
+    .content2 .contactMessage{
+        background-color: bisque;
+    }
+} */
