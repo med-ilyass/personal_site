@@ -15,6 +15,10 @@ A personal portfolio website showcasing my About Me, Experiences, Education, and
 # 🎓 portfolio.html (Education & Certifications)
 	•	Lists my education background and certifications.
 	•	Displays logos, dates, skills acquired, and links to certification credentials.
+
+# ContactMe.html ( contact me )
+	•	Contact Me form (name, email and message).
+ 
 ## 💻 Code & Styling
 # 📜 javascript.js
 	•	Contains a simple Hello World script as a demonstration.
