@@ -70,14 +70,14 @@ nav{
 }
 
 .content{
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
-    height: 100hv;
+    /* height: 100hv; */
 }
 .container{
     display: flex;
@@ -85,6 +85,9 @@ nav{
     align-items: center;
     width: 90%;
 
+}
+.title{
+    margin-top: 20px;
 }
 
 .title1{
@@ -111,12 +114,10 @@ nav{
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    width: 400px;
-    height: 400px;
 }
 .profile-image img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 30%;
 }
@@ -225,7 +226,7 @@ footer img {
     color: red;
 }
 footer{
-    height: calc(100vh - 140px);
+    height: calc(25vh - 140px);
     background-color: #001f3f; 
     width: 100%;
     color: white;
